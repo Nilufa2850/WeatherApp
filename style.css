@@ -1,0 +1,232 @@
+*{
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper
+{
+    background-image: url(assets/cloud_BK.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    /* min-height: 100vh; */
+}
+.main-container
+{
+    /* border: 2px solid yellow; */
+    text-align: center;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 600px;
+    width: 90%;
+    max-width: 100%;
+}
+
+/* heading */
+#heading
+{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+/* all content */
+.all-content
+{
+    /* border: 2px solid green; */
+    margin-bottom: 80px;
+}
+
+/* search bar */
+.div-form-container
+{
+    /* border: 2px solid red; */
+    display: flex; /*rememebr for make none*/
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+    padding: 10px;
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+.div-form-container input 
+{
+    all: unset;
+    width: calc(100% - 80px);
+    height: 40px;
+    padding: 0 20px;
+    background-color: #00000080; 
+    border-radius: 15px;
+    text-align: left;
+    color: #DBE2EF;
+    
+}
+.div-form-container input:focus
+{
+    outline: 3px solid rgb(0, 0, 0, 0.5);
+}
+.div-form-container input::placeholder
+{
+    color: #DBE2EF;
+}
+.div-form-container button 
+{
+    border: none;
+    outline: none;
+    background-color: #00000080;
+    color: #DBE2EF;
+    border-radius: 100% ;
+    padding: 10px ;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-form-container button img
+{
+    width: 20px;
+    height: 20px;
+}
+
+/* loading , error*/
+
+.sub-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/* loading */
+.loading-container
+{
+    display: none;
+}
+.loading-container img
+{
+    width:150px;
+    height: 150px;
+    /* margin-top: 40px; */
+}
+.loading-container p
+{
+    text-transform: uppercase;
+    color: black;
+}
+
+
+/* error */
+.error-container
+{
+    display: none;
+}
+.error-container img
+{
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+}
+.error-container p
+{
+    color: black;
+    margin-top: 10px;
+}
+
+
+
+/* user information */
+.user-info-container
+{
+    color: black;
+    display: none; 
+}
+.user-info-container p{
+    font-size:1.5rem;
+    font-weight:200;
+}
+.user-info-container img{
+    width:90px;
+    height:90px;
+    margin: 5px 0;
+}
+
+/* city name and flag */
+.city-name
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: -5px;
+}
+.city-name p 
+{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.city-name img
+{
+    width: 30px;
+    height:30px;
+    object-fit: contain;
+}
+/* tempareture */
+#temp
+{
+    font-size: 2.75rem;
+    font-weight: 700;
+    margin-top: 0.2rem;
+}
+
+
+/* 3 cards */
+.parameter-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    color: #ffffffd4;
+}
+.parameter
+{
+    width: 200px;
+    max-width: 200px;
+    background-color: rgba(0, 0, 0, 0.428);
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px 0;
+}
+.parameter img
+{
+    width: 50px;
+    height: 50px;
+}
+.parameter p:first-of-type
+{
+    font-size: 1.15rem;
+    font-weight:600;
+    text-transform: uppercase;
+}
+.parameter p:last-of-type
+{
+    font-size: 1rem;
+    font-weight: 200;
+}

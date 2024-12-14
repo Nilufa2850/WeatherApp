@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main-container">
+
+            <h1 id="heading">Weather App</h1>
+
+            <!-- content box -->
+             <div class="all-content">
+                <!-- grant loaction access -->
+
+                <!-- search -->
+                 <div class="div-form-container" id="searchForm">
+                    <input type="text" placeholder="Search weather by city..." data-search-city>
+                    <button type="submit" data-search-btn>
+                        <img src="assets/search.png" loading="lazy">
+                    </button>
+                </div>
+
+                <!-- loading HW--> 
+                 <div class="sub-container loading-container">
+                    <img src="assets/loading_green.gif" alt="" loading="lazy">
+                    <p>Loading</p>
+                 </div>
+
+                 <!-- Error -->
+                  <div class="sub-container error-container">
+                    <img src="assets/404-error.png" alt="" >
+                    <p>City not found</p>
+                  </div>
+
+                  <!-- weather info -->
+                   <div class="sub-container user-info-container">
+
+                        <!-- City Name and Flag -->
+                        <div class="city-name">
+                            <p id="cityName">kolkata</p>
+                            <img src="" alt="" id="cityFlag"> <!--add flag-->
+                        </div>
+
+                        <!-- weather description -->
+                        <p id="weatherDescription">Smoke</p>
+
+                        <!-- weather description icon -->
+                         <img  src="" alt="" id="desIcon">
+
+                         <!-- temparature -->
+                          <p id="temp">27 °C</p>
+
+
+                        <!-- 3 parameter add -->
+                        <div class="parameter-container">
+
+                            <!-- card 1-->
+                            <div class="parameter">
+                                <img src="assets/wind_gif.gif" alt="">
+                                <p>Wind Speed</p>
+                                <p id="wind">3.14 m/s</p>
+                            </div>
+
+                            <!-- card 2-->
+                            <div class="parameter">
+                                <img src="assets/Humidity.png" alt="">
+                                <p>Humidity</p>
+                                <p id="humidity">29%</p>
+                            </div>
+
+                            <!-- card 3-->
+                            <div class="parameter">
+                                <img src="assets/clouds.png" alt="">
+                                <p>Cloud</p>
+                                <p id="cloud">62%</p>
+                            </div>
+                        </div>
+                        
+                   </div>
+             </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
