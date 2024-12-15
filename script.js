@@ -39,7 +39,7 @@ async function checkWeather (cityName)
 
         // update all data for showing
         city.innerHTML = data.name;
-        descWeather.innerHTML = data.weather[0].main ;
+        descWeather.innerHTML = data.weather[0].description ;
         temp.innerHTML = Math.floor( data.main.temp) + " °C" ;
         wind.innerHTML = data.wind.speed + " m/s" ;
         humidity.innerHTML = data.main.humidity + "%" ;
